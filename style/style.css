@@ -1,9 +1,51 @@
+.header {
+    background-color: aqua;
+    max-height: 200vh;
+   max-width: 200vw;
+    ;
+}
 .c-div {
     min-width: 200px;
     max-width: 500px;
     background: wheat;
     width: max-content;
+    padding: 0 10px;
 }
-img {
-    ;
+.images {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding-bottom: 100px;
+}
+
+.images img {
+    object-fit: fill;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.products img{
+    width: 100%;
+    height: 200px;
+    
+    
+}
+
+.card {
+    background: rgb(90, 190, 190);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card div {
+    padding: 0px;
+}
+
+.card:hover {
+    background: rgb(98, 136, 0);
 }
